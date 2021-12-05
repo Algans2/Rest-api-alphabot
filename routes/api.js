@@ -288,7 +288,7 @@ router.get('/cewe/vietnam', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
 	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
-       fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/vietnam.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/Algans2/warga62/master/bocil.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
